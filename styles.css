@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Cutive&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cutive', serif;
+}
+
+
+.typewriter h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 720px;
+    color: #000;
+    border-right: 4px solid #feb633;
+    font-size: 300%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typewriter 2s steps(44) 0.3s 1 normal both,
+        blinkTextCursor 500ms steps(44) infinite normal;
+}
+.typewriter h1 .blue {
+    color: #33e1ed;
+}
+@keyframes typewriter {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 720px;
+    }
+}
+
+@keyframes blinkTextCursor {
+    from {
+        border-right-color: #33e1ed;
+    }
+
+    to {
+        border-right-color: transparent;
+    }
+}
